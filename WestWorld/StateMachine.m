@@ -7,11 +7,15 @@
 //
 
 #import "StateMachine.h"
+#import "Message.h"
 
 @implementation StateMachine
 @synthesize currentState, globalState, previousState;
 
--(id)initWithEntity:(BaseGameEntity *)ownerEntity withCurrentState:(State *)ownerCurrentState andPreviousState:(State *)ownerPreviousState andGlobalState:(State *)ownerGlobalState{
+-(id)initWithEntity:(BaseGameEntity *)ownerEntity
+   withCurrentState:(State *)ownerCurrentState
+   andPreviousState:(State *)ownerPreviousState
+     andGlobalState:(State *)ownerGlobalState{
     self = [super init];
     if(self){
         owner = ownerEntity;
@@ -47,6 +51,18 @@
 
 -(BOOL)isInState:(State *)state{
     return self.currentState == state;
+}
+
+-(BOOL)handleMessage:(Message *)msg{
+    if(currentState && [currentState onMessage:msg]){
+        return YES;
+    }
+    else if(globalState && [globalState onMessage:msg]){
+        return YES;
+    }
+    else{
+        return NO;
+    }
 }
 
 @end

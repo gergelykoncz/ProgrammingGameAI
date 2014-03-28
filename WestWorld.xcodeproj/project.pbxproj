@@ -21,6 +21,9 @@
 		EA12523018E5C86A00332EA1 /* Wife.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12522F18E5C86A00332EA1 /* Wife.m */; };
 		EA12523318E5C8B700332EA1 /* DoHouseWork.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12523218E5C8B700332EA1 /* DoHouseWork.m */; };
 		EA12523618E5C9D400332EA1 /* VisitBathroom.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12523518E5C9D400332EA1 /* VisitBathroom.m */; };
+		EA12523A18E5DFAE00332EA1 /* MessageDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12523918E5DFAE00332EA1 /* MessageDispatcher.m */; };
+		EA12523D18E5E05000332EA1 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12523C18E5E05000332EA1 /* Message.m */; };
+		EA12524018E5E12E00332EA1 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12523F18E5E12E00332EA1 /* EntityManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +66,12 @@
 		EA12523218E5C8B700332EA1 /* DoHouseWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoHouseWork.m; sourceTree = "<group>"; };
 		EA12523418E5C9D400332EA1 /* VisitBathroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitBathroom.h; sourceTree = "<group>"; };
 		EA12523518E5C9D400332EA1 /* VisitBathroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitBathroom.m; sourceTree = "<group>"; };
+		EA12523818E5DFAE00332EA1 /* MessageDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDispatcher.h; sourceTree = "<group>"; };
+		EA12523918E5DFAE00332EA1 /* MessageDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDispatcher.m; sourceTree = "<group>"; };
+		EA12523B18E5E05000332EA1 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		EA12523C18E5E05000332EA1 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		EA12523E18E5E12E00332EA1 /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
+		EA12523F18E5E12E00332EA1 /* EntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,7 @@
 		EA12520518E5B3BA00332EA1 /* WestWorld */ = {
 			isa = PBXGroup;
 			children = (
+				EA12523718E5DF9F00332EA1 /* Messaging */,
 				EA12521918E5B79800332EA1 /* States */,
 				EA12520F18E5B3C300332EA1 /* Entities */,
 				EA12520618E5B3BA00332EA1 /* main.m */,
@@ -122,6 +132,8 @@
 				EA12521418E5B54700332EA1 /* Miner.m */,
 				EA12522E18E5C86A00332EA1 /* Wife.h */,
 				EA12522F18E5C86A00332EA1 /* Wife.m */,
+				EA12523E18E5E12E00332EA1 /* EntityManager.h */,
+				EA12523F18E5E12E00332EA1 /* EntityManager.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -163,6 +175,17 @@
 				EA12523518E5C9D400332EA1 /* VisitBathroom.m */,
 			);
 			name = Wife;
+			sourceTree = "<group>";
+		};
+		EA12523718E5DF9F00332EA1 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				EA12523818E5DFAE00332EA1 /* MessageDispatcher.h */,
+				EA12523918E5DFAE00332EA1 /* MessageDispatcher.m */,
+				EA12523B18E5E05000332EA1 /* Message.h */,
+				EA12523C18E5E05000332EA1 /* Message.m */,
+			);
+			name = Messaging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,14 +242,17 @@
 				EA12523018E5C86A00332EA1 /* Wife.m in Sources */,
 				EA12523318E5C8B700332EA1 /* DoHouseWork.m in Sources */,
 				EA12521D18E5B7C100332EA1 /* EnterMineAndDigForNugget.m in Sources */,
+				EA12523D18E5E05000332EA1 /* Message.m in Sources */,
 				EA12521518E5B54700332EA1 /* Miner.m in Sources */,
 				EA12520718E5B3BA00332EA1 /* main.m in Sources */,
 				EA12522618E5BB9500332EA1 /* QuenchThirst.m in Sources */,
 				EA12521218E5B3DC00332EA1 /* BaseGameEntity.m in Sources */,
 				EA12522318E5BB5B00332EA1 /* VisitBankAndDepositGold.m in Sources */,
+				EA12524018E5E12E00332EA1 /* EntityManager.m in Sources */,
 				EA12521818E5B59E00332EA1 /* State.m in Sources */,
 				EA12523618E5C9D400332EA1 /* VisitBathroom.m in Sources */,
 				EA12522918E5BF2800332EA1 /* StateMachine.m in Sources */,
+				EA12523A18E5DFAE00332EA1 /* MessageDispatcher.m in Sources */,
 				EA12522C18E5C43000332EA1 /* GoHomeAndSleepTilRested.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

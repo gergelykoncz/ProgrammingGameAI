@@ -9,6 +9,7 @@
 #import "BaseGameEntity.h"
 #import "StateMachine.h"
 #import "State.h"
+#import "Message.h"
 
 @implementation BaseGameEntity
 @synthesize identifier;
@@ -31,6 +32,10 @@
 
 -(NSString*)getName{
     return @"";
+}
+
+-(BOOL)handleMessage:(Message *)message{
+    return NO;
 }
 
 @end

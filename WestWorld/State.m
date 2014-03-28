@@ -7,6 +7,7 @@
 //
 
 #import "State.h"
+#import "Message.h"
 
 @implementation State
 
@@ -20,6 +21,10 @@
 
 -(void)exit:(BaseGameEntity *)entity{
     
+}
+
+-(BOOL)onMessage:(Message *)msg{
+    return NO;
 }
 
 @end

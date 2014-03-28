@@ -23,8 +23,7 @@
 -(void)execute:(BaseGameEntity *)entity{
     Wife* wife = (Wife*)entity;
     NSLog(@"%@: Shittin", [wife getName]);
-    NSLog(@"%@: Gotta go to the living froom.", [wife getName]);
-    [wife changeState:[DoHouseWork new]];
+    [wife revertToPreviousState];
 }
 
 -(void)exit:(BaseGameEntity *)entity{

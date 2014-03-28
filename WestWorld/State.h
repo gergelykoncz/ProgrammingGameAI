@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseGameEntity.h"
+@class Message;
 
 @interface State : NSObject
 
 -(void)execute:(BaseGameEntity*)entity;
 -(void)enter:(BaseGameEntity*)entity;
 -(void)exit:(BaseGameEntity*)entity;
+
+-(BOOL)onMessage:(Message*)msg;
 
 @end

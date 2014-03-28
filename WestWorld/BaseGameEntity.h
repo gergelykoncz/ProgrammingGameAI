@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 @class StateMachine;
 @class State;
+@class Message;
 
 typedef enum {
     kGoldMine,
@@ -29,6 +30,8 @@ typedef enum {
 -(void)changeState:(State*)newState;
 -(void)revertToPreviousState;
 -(NSString*)getName;
+
+-(BOOL)handleMessage:(Message*)message;
 
 
 @end

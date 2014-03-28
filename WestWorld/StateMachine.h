@@ -10,6 +10,8 @@
 #import "BaseGameEntity.h"
 #import "State.h"
 
+@class Message;
+
 @interface StateMachine : NSObject{
     BaseGameEntity* owner;
 }
@@ -27,4 +29,6 @@
 -(void)changeState:(State*)newState;
 -(void)revertToPreviousState;
 -(BOOL)isInState:(State*)state;
+
+-(BOOL)handleMessage:(Message*)msg;
 @end
