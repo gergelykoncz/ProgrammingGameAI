@@ -8,8 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		EA12520418E5B3BA00332EA1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA12520318E5B3BA00332EA1 /* CoreFoundation.framework */; };
-		EA12520718E5B3BA00332EA1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EA12520618E5B3BA00332EA1 /* main.c */; };
+		EA12520718E5B3BA00332EA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12520618E5B3BA00332EA1 /* main.m */; };
 		EA12520918E5B3BA00332EA1 /* WestWorld.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA12520818E5B3BA00332EA1 /* WestWorld.1 */; };
+		EA12521218E5B3DC00332EA1 /* BaseGameEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12521118E5B3DC00332EA1 /* BaseGameEntity.m */; };
+		EA12521518E5B54700332EA1 /* Miner.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12521418E5B54700332EA1 /* Miner.m */; };
+		EA12521818E5B59E00332EA1 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12521718E5B59E00332EA1 /* State.m */; };
+		EA12521D18E5B7C100332EA1 /* EnterMineAndDigForNugget.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12521C18E5B7C100332EA1 /* EnterMineAndDigForNugget.m */; };
+		EA12522318E5BB5B00332EA1 /* VisitBankAndDepositGold.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12522218E5BB5B00332EA1 /* VisitBankAndDepositGold.m */; };
+		EA12522618E5BB9500332EA1 /* QuenchThirst.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12522518E5BB9500332EA1 /* QuenchThirst.m */; };
+		EA12522918E5BF2800332EA1 /* StateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12522818E5BF2800332EA1 /* StateMachine.m */; };
+		EA12522C18E5C43000332EA1 /* GoHomeAndSleepTilRested.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12522B18E5C43000332EA1 /* GoHomeAndSleepTilRested.m */; };
+		EA12523018E5C86A00332EA1 /* Wife.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12522F18E5C86A00332EA1 /* Wife.m */; };
+		EA12523318E5C8B700332EA1 /* DoHouseWork.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12523218E5C8B700332EA1 /* DoHouseWork.m */; };
+		EA12523618E5C9D400332EA1 /* VisitBathroom.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12523518E5C9D400332EA1 /* VisitBathroom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,8 +39,30 @@
 /* Begin PBXFileReference section */
 		EA12520018E5B3BA00332EA1 /* WestWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WestWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA12520318E5B3BA00332EA1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		EA12520618E5B3BA00332EA1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EA12520618E5B3BA00332EA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA12520818E5B3BA00332EA1 /* WestWorld.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WestWorld.1; sourceTree = "<group>"; };
+		EA12521018E5B3DC00332EA1 /* BaseGameEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGameEntity.h; sourceTree = "<group>"; };
+		EA12521118E5B3DC00332EA1 /* BaseGameEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGameEntity.m; sourceTree = "<group>"; };
+		EA12521318E5B54700332EA1 /* Miner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Miner.h; sourceTree = "<group>"; };
+		EA12521418E5B54700332EA1 /* Miner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Miner.m; sourceTree = "<group>"; };
+		EA12521618E5B59E00332EA1 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		EA12521718E5B59E00332EA1 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		EA12521B18E5B7C100332EA1 /* EnterMineAndDigForNugget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterMineAndDigForNugget.h; sourceTree = "<group>"; };
+		EA12521C18E5B7C100332EA1 /* EnterMineAndDigForNugget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterMineAndDigForNugget.m; sourceTree = "<group>"; };
+		EA12522118E5BB5B00332EA1 /* VisitBankAndDepositGold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitBankAndDepositGold.h; sourceTree = "<group>"; };
+		EA12522218E5BB5B00332EA1 /* VisitBankAndDepositGold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitBankAndDepositGold.m; sourceTree = "<group>"; };
+		EA12522418E5BB9500332EA1 /* QuenchThirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuenchThirst.h; sourceTree = "<group>"; };
+		EA12522518E5BB9500332EA1 /* QuenchThirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuenchThirst.m; sourceTree = "<group>"; };
+		EA12522718E5BF2800332EA1 /* StateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
+		EA12522818E5BF2800332EA1 /* StateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateMachine.m; sourceTree = "<group>"; };
+		EA12522A18E5C43000332EA1 /* GoHomeAndSleepTilRested.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoHomeAndSleepTilRested.h; sourceTree = "<group>"; };
+		EA12522B18E5C43000332EA1 /* GoHomeAndSleepTilRested.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoHomeAndSleepTilRested.m; sourceTree = "<group>"; };
+		EA12522E18E5C86A00332EA1 /* Wife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wife.h; sourceTree = "<group>"; };
+		EA12522F18E5C86A00332EA1 /* Wife.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wife.m; sourceTree = "<group>"; };
+		EA12523118E5C8B700332EA1 /* DoHouseWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoHouseWork.h; sourceTree = "<group>"; };
+		EA12523218E5C8B700332EA1 /* DoHouseWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoHouseWork.m; sourceTree = "<group>"; };
+		EA12523418E5C9D400332EA1 /* VisitBathroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitBathroom.h; sourceTree = "<group>"; };
+		EA12523518E5C9D400332EA1 /* VisitBathroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitBathroom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +105,64 @@
 		EA12520518E5B3BA00332EA1 /* WestWorld */ = {
 			isa = PBXGroup;
 			children = (
-				EA12520618E5B3BA00332EA1 /* main.c */,
+				EA12521918E5B79800332EA1 /* States */,
+				EA12520F18E5B3C300332EA1 /* Entities */,
+				EA12520618E5B3BA00332EA1 /* main.m */,
 				EA12520818E5B3BA00332EA1 /* WestWorld.1 */,
 			);
 			path = WestWorld;
+			sourceTree = "<group>";
+		};
+		EA12520F18E5B3C300332EA1 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EA12521018E5B3DC00332EA1 /* BaseGameEntity.h */,
+				EA12521118E5B3DC00332EA1 /* BaseGameEntity.m */,
+				EA12521318E5B54700332EA1 /* Miner.h */,
+				EA12521418E5B54700332EA1 /* Miner.m */,
+				EA12522E18E5C86A00332EA1 /* Wife.h */,
+				EA12522F18E5C86A00332EA1 /* Wife.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		EA12521918E5B79800332EA1 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				EA12522D18E5C85800332EA1 /* Wife */,
+				EA12521A18E5B7A600332EA1 /* Miner */,
+				EA12521618E5B59E00332EA1 /* State.h */,
+				EA12521718E5B59E00332EA1 /* State.m */,
+				EA12522718E5BF2800332EA1 /* StateMachine.h */,
+				EA12522818E5BF2800332EA1 /* StateMachine.m */,
+			);
+			name = States;
+			sourceTree = "<group>";
+		};
+		EA12521A18E5B7A600332EA1 /* Miner */ = {
+			isa = PBXGroup;
+			children = (
+				EA12521B18E5B7C100332EA1 /* EnterMineAndDigForNugget.h */,
+				EA12521C18E5B7C100332EA1 /* EnterMineAndDigForNugget.m */,
+				EA12522118E5BB5B00332EA1 /* VisitBankAndDepositGold.h */,
+				EA12522218E5BB5B00332EA1 /* VisitBankAndDepositGold.m */,
+				EA12522418E5BB9500332EA1 /* QuenchThirst.h */,
+				EA12522518E5BB9500332EA1 /* QuenchThirst.m */,
+				EA12522A18E5C43000332EA1 /* GoHomeAndSleepTilRested.h */,
+				EA12522B18E5C43000332EA1 /* GoHomeAndSleepTilRested.m */,
+			);
+			name = Miner;
+			sourceTree = "<group>";
+		};
+		EA12522D18E5C85800332EA1 /* Wife */ = {
+			isa = PBXGroup;
+			children = (
+				EA12523118E5C8B700332EA1 /* DoHouseWork.h */,
+				EA12523218E5C8B700332EA1 /* DoHouseWork.m */,
+				EA12523418E5C9D400332EA1 /* VisitBathroom.h */,
+				EA12523518E5C9D400332EA1 /* VisitBathroom.m */,
+			);
+			name = Wife;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +216,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA12520718E5B3BA00332EA1 /* main.c in Sources */,
+				EA12523018E5C86A00332EA1 /* Wife.m in Sources */,
+				EA12523318E5C8B700332EA1 /* DoHouseWork.m in Sources */,
+				EA12521D18E5B7C100332EA1 /* EnterMineAndDigForNugget.m in Sources */,
+				EA12521518E5B54700332EA1 /* Miner.m in Sources */,
+				EA12520718E5B3BA00332EA1 /* main.m in Sources */,
+				EA12522618E5BB9500332EA1 /* QuenchThirst.m in Sources */,
+				EA12521218E5B3DC00332EA1 /* BaseGameEntity.m in Sources */,
+				EA12522318E5BB5B00332EA1 /* VisitBankAndDepositGold.m in Sources */,
+				EA12521818E5B59E00332EA1 /* State.m in Sources */,
+				EA12523618E5C9D400332EA1 /* VisitBathroom.m in Sources */,
+				EA12522918E5BF2800332EA1 /* StateMachine.m in Sources */,
+				EA12522C18E5C43000332EA1 /* GoHomeAndSleepTilRested.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

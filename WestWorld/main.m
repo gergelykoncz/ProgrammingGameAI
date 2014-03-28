@@ -7,12 +7,18 @@
 //
 
 #include <CoreFoundation/CoreFoundation.h>
+#include "Miner.h"
+#import "Wife.h"
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    CFShow(CFSTR("Hello, World!\n"));
+    Miner* miner = [Miner new];
+    Wife* wife = [Wife new];
+    while(true){
+        [miner update];
+        [wife update];
+    }
     return 0;
 }
 
