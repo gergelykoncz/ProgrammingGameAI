@@ -24,6 +24,9 @@
 		EA12523A18E5DFAE00332EA1 /* MessageDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12523918E5DFAE00332EA1 /* MessageDispatcher.m */; };
 		EA12523D18E5E05000332EA1 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12523C18E5E05000332EA1 /* Message.m */; };
 		EA12524018E5E12E00332EA1 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12523F18E5E12E00332EA1 /* EntityManager.m */; };
+		EA160F7918E6D21A008D52A1 /* WifeGlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = EA160F7818E6D21A008D52A1 /* WifeGlobalState.m */; };
+		EA160F7C18E6D810008D52A1 /* EventLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = EA160F7B18E6D810008D52A1 /* EventLoop.m */; };
+		EA160F7F18E6DB31008D52A1 /* CookStew.m in Sources */ = {isa = PBXBuildFile; fileRef = EA160F7E18E6DB31008D52A1 /* CookStew.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +75,12 @@
 		EA12523C18E5E05000332EA1 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		EA12523E18E5E12E00332EA1 /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
 		EA12523F18E5E12E00332EA1 /* EntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityManager.m; sourceTree = "<group>"; };
+		EA160F7718E6D21A008D52A1 /* WifeGlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifeGlobalState.h; sourceTree = "<group>"; };
+		EA160F7818E6D21A008D52A1 /* WifeGlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifeGlobalState.m; sourceTree = "<group>"; };
+		EA160F7A18E6D810008D52A1 /* EventLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLoop.h; sourceTree = "<group>"; };
+		EA160F7B18E6D810008D52A1 /* EventLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLoop.m; sourceTree = "<group>"; };
+		EA160F7D18E6DB31008D52A1 /* CookStew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookStew.h; sourceTree = "<group>"; };
+		EA160F7E18E6DB31008D52A1 /* CookStew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookStew.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +128,8 @@
 				EA12520F18E5B3C300332EA1 /* Entities */,
 				EA12520618E5B3BA00332EA1 /* main.m */,
 				EA12520818E5B3BA00332EA1 /* WestWorld.1 */,
+				EA160F7A18E6D810008D52A1 /* EventLoop.h */,
+				EA160F7B18E6D810008D52A1 /* EventLoop.m */,
 			);
 			path = WestWorld;
 			sourceTree = "<group>";
@@ -173,6 +184,10 @@
 				EA12523218E5C8B700332EA1 /* DoHouseWork.m */,
 				EA12523418E5C9D400332EA1 /* VisitBathroom.h */,
 				EA12523518E5C9D400332EA1 /* VisitBathroom.m */,
+				EA160F7718E6D21A008D52A1 /* WifeGlobalState.h */,
+				EA160F7818E6D21A008D52A1 /* WifeGlobalState.m */,
+				EA160F7D18E6DB31008D52A1 /* CookStew.h */,
+				EA160F7E18E6DB31008D52A1 /* CookStew.m */,
 			);
 			name = Wife;
 			sourceTree = "<group>";
@@ -248,9 +263,12 @@
 				EA12522618E5BB9500332EA1 /* QuenchThirst.m in Sources */,
 				EA12521218E5B3DC00332EA1 /* BaseGameEntity.m in Sources */,
 				EA12522318E5BB5B00332EA1 /* VisitBankAndDepositGold.m in Sources */,
+				EA160F7918E6D21A008D52A1 /* WifeGlobalState.m in Sources */,
 				EA12524018E5E12E00332EA1 /* EntityManager.m in Sources */,
 				EA12521818E5B59E00332EA1 /* State.m in Sources */,
+				EA160F7F18E6DB31008D52A1 /* CookStew.m in Sources */,
 				EA12523618E5C9D400332EA1 /* VisitBathroom.m in Sources */,
+				EA160F7C18E6D810008D52A1 /* EventLoop.m in Sources */,
 				EA12522918E5BF2800332EA1 /* StateMachine.m in Sources */,
 				EA12523A18E5DFAE00332EA1 /* MessageDispatcher.m in Sources */,
 				EA12522C18E5C43000332EA1 /* GoHomeAndSleepTilRested.m in Sources */,
@@ -363,6 +381,7 @@
 				EA12520E18E5B3BA00332EA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

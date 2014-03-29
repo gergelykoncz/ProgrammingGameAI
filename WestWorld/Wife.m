@@ -9,9 +9,11 @@
 #import "Wife.h"
 #import "StateMachine.h"
 #import "DoHouseWork.h"
+#import "Miner.h"
+#import "WifeGlobalState.h"
 
 @implementation Wife
-@synthesize location;
+@synthesize location, miner, isCooking;
 
 -(NSString*)getName{
     return @"Elza";
@@ -23,7 +25,7 @@
         stateMachine = [[StateMachine alloc] initWithEntity:self
                                            withCurrentState:[DoHouseWork new]
                                            andPreviousState:nil
-                                             andGlobalState:nil];
+                                             andGlobalState:[WifeGlobalState new]];
     }
     return self;
 }

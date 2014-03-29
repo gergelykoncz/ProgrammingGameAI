@@ -7,9 +7,12 @@
 //
 
 #import "BaseGameEntity.h"
+@class Miner;
 
 @interface Wife : BaseGameEntity
 
 @property(nonatomic, assign) locationType location;
+@property(nonatomic, weak) Miner* miner;
+@property(nonatomic, assign) BOOL isCooking;
 
 @end

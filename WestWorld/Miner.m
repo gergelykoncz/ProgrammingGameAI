@@ -10,9 +10,10 @@
 #import "State.h"
 #import "StateMachine.h"
 #import "GoHomeAndSleepTilRested.h"
+#import "Wife.h"
 
 @implementation Miner
-@synthesize fatigue, goldCarried, identifier, location, moneyInBank, thirst;
+@synthesize fatigue, goldCarried, identifier, location, moneyInBank, thirst, wife;
 
 -(id)init{
     self = [super init];

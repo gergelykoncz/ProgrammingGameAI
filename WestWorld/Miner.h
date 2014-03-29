@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseGameEntity.h"
+
 @class State;
+@class Wife;
 
 @interface Miner : BaseGameEntity
 
@@ -22,5 +24,6 @@
 @property(nonatomic, assign) int thirst;
 @property(nonatomic, assign) int fatigue;
 @property(nonatomic, assign) locationType location;
+@property(nonatomic, weak) Wife* wife;
 
 @end

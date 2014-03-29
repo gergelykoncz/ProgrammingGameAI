@@ -22,13 +22,35 @@
     return instance;
 }
 
+-(id)init{
+    self = [super init];
+    if(self){
+        queue = [NSMutableArray new];
+    }
+    return self;
+}
+
 -(void)dispatchDelayedMessages{
-    
+    for(Message* message in queue){
+        NSDate* now = [NSDate new];
+        NSDate* fireDate = [message.startDate dateByAddingTimeInterval:(NSTimeInterval)message.delay];
+        if([now compare:fireDate] == NSOrderedDescending){
+            NSLog(@"Dispatching a delayed message.");
+            BaseGameEntity* receiver = [[EntityManager sharedInstance] retrieveEntity:message.receiver];
+            [self discharge:receiver ofMessage:message];
+            [queue removeObject:message];
+        }
+    }
 }
 
 -(void)dispatchMessage:(Message *)message{
-    BaseGameEntity* receiver = [[EntityManager sharedInstance] retrieveEntity:message.receiver];
-    [self discharge:receiver ofMessage:message];
+    if(message.delay == 0){
+        BaseGameEntity* receiver = [[EntityManager sharedInstance] retrieveEntity:message.receiver];
+        [self discharge:receiver ofMessage:message];
+    }
+    else{
+        [queue addObject:message];
+    }
 }
 
 -(void)discharge:(BaseGameEntity*)receiver ofMessage:(Message*)msg{

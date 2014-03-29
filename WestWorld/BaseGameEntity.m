@@ -35,7 +35,7 @@
 }
 
 -(BOOL)handleMessage:(Message *)message{
-    return NO;
+    return [stateMachine handleMessage:message];
 }
 
 @end

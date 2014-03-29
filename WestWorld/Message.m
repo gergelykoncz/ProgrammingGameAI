@@ -9,7 +9,7 @@
 #import "Message.h"
 
 @implementation Message
-@synthesize delay, sender, receiver, msg;
+@synthesize delay, sender, receiver, msg, startDate;
 
 -(id)initWithSender:(int)aSender andReceiver:(int)aReceiver andMessage:(int)aMsg withDelay:(double)aDelay{
     self = [super init];
@@ -18,6 +18,7 @@
         self.receiver = aReceiver;
         self.msg = aMsg;
         self.delay = aDelay;
+        self.startDate = [NSDate new];
     }
     return self;
 }

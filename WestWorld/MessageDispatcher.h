@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 @class Message;
 
-@interface MessageDispatcher : NSObject
+@interface MessageDispatcher : NSObject{
+    NSMutableArray* queue;
+}
 
 +(MessageDispatcher*)sharedInstance;
 

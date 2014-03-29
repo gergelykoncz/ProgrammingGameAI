@@ -7,23 +7,36 @@
 //
 
 #include <CoreFoundation/CoreFoundation.h>
-#include "Miner.h"
-#import "Wife.h"
-#import "EntityManager.h"
+#import "EventLoop.h"
+
+const int NUM_SECONDS = 0.1;
 
 int main(int argc, const char * argv[])
 {
     
-    Miner* miner = [Miner new];
-    Wife* wife = [Wife new];
+    EventLoop* eventLoop = [EventLoop new];
+    [eventLoop startLoop];
     
-    [[EntityManager sharedInstance] registerEntity:miner];
-    [[EntityManager sharedInstance] registerEntity:wife];
+    double time_counter = 0;
     
-    while(true){
-        [miner update];
-        [wife update];
+    clock_t this_time = clock();
+    clock_t last_time = this_time;
+    while (true) {
+        this_time = clock();
+        
+        time_counter += (double)(this_time - last_time);
+        
+        last_time = this_time;
+        
+        if(time_counter > (double)(NUM_SECONDS * CLOCKS_PER_SEC))
+        {
+            time_counter -= (double)(NUM_SECONDS * CLOCKS_PER_SEC);
+            [eventLoop loop];
+        }
+        
+        
     }
+    
     return 0;
 }
 
